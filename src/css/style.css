@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Karla-Regular';
+    src: url('../fonts/karla/Karla-Regular.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karla-Bold';
+    src: url('../fonts/karla/Karla-Bold.ttf') format('truetype');
+    font-style: bold;
+}
+
+h2 {
+    color: white;
+    font-family: Karla-Bold;
+    margin: 20px;
+}
+
+#form {
+    display: flex;
+    
+}
+
+#map { 
+    height: 82vh; 
+    width: 100%;
+    z-index: 0;
+}
+
+#headerIpSearch {
+    background: url('../img/pattern-bg.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 189px;
+}
+
+#submit {
+    background: black url('../icons/icon-arrow.svg') no-repeat center;
+    background-size: 8px 8px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    padding: 15px 8px;
+    width: 40px;
+    cursor: pointer;
+}
+
+#search {
+    border: none;
+    border-radius: 8px 0 0 8px;
+    padding: 15px 50px 15px 15px;
+    width: 400px;
+    cursor: pointer;
+    outline: none;
+}
+
+#submit:hover {
+    background-color: rgb(43, 43, 43);
+}
+
+#ipInformation {
+    display: flex;
+    align-items: center;
+    font-family: Karla-Bold;
+    font-size: 13px;
+    color: #999;
+    background-color: white;
+    width: 800px;
+    border-radius: 8px;
+    position: relative;
+    bottom: -20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.138);
+    z-index: 1;
+    padding: 25px 0;
+}
+
+.box {
+    width: 25%;
+    height: 50px;
+    border-right: solid 1px rgb(231, 231, 231);
+    margin-left: 20px;
+    
+}
+
+.box span {
+    text-transform: uppercase;
+}
+
+.box p {
+    font-family: Karla-Bold;
+    color: black;
+    font-size: 18px;
+    
+}
+
+.box:last-child {
+    border-right: solid 1px #fff;
+}
+
+@media only screen and (max-width: 835px) {
+    #ipInformation {
+        flex-direction: column;
+        width: 300px;
+    }
+
+    #headerIpSearch {
+        height: 260px;
+    }
+
+    .box {
+        border: none;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    #search {
+        width: 260px;
+        
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #ipInformation {
+        flex-direction: column;
+        width: 98%;
+    }
+
+    .box {
+        border: none;
+        width: 260px;
+        text-align: center;
+    }
+
+    #search {
+        width: 233px;
+        
+    }
+}
+
+
